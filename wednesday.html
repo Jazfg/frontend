@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wednesday</title>
+    <style>
+        body{
+        background: rgb(241, 241, 248);
+      }
+        .free {
+        color: black;
+        }
+        body {
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+      }
+      h1{
+        display:block;
+        font-size: 3em;
+        border: 1px solid rgb(241, 241, 248) ;
+        padding: 12px;
+        border-radius: 10px;
+        }
+        h2{
+            font-size: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+      img{
+        display: block;
+        margin: 30px auto;
+        width:300px;
+        overflow-clip-margin:content-box;
+        overflow: clip;
+      }
+      p{
+        text-align: center;
+        display: inline;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+      }
+       div{
+        display: block;
+        text-align: center;
+      }
+      ul{
+        padding: 0;
+        text-align: center;
+        list-style: none;
+      }
+      li{
+        display: inline;
+        margin: 0 15px;
+      }
+      button {
+        border-radius: 6px;
+        margin: 0 auto;
+        display: block;
+        background-color:rgb(232, 232, 245);
+        border: 1px solid black;
+        color: rgb(173, 51, 51);
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        box-shadow: blue (29,26,23,0.08) 0px 4px 4px 0px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover{
+        background-color: black;
+        color: white;
+      }
+      .demo-final{
+        margin: 20px auto;
+        border-radius: 15px;
+        padding: 35px;
+        font-weight: 0;
+        width: 50%;
+        color: white;
+        background-image: linear-gradient(to top, rgb(173, 51, 51) 2%, black 90%); 
+      }
+
+    </style>
+
+</head>
+<body>
+    <div class="fun">
+   <hr>
+   <img src=" https://ih1.redbubble.net/image.4558798890.7382/st,small,507x507-pad,600x600,f8f8f8.jpg" style="float:left;" alt>
+   <img src="https://ih1.redbubble.net/image.4573022461.4449/st,small,507x507-pad,600x600,f8f8f8.jpg" style="float:right;" alt>
+    </hr>
+    </div>
+    <div class="demo-final">
+    <h1>
+        Wednesday
+    </h1>
+    <h2>
+        <em>"Wednesday child is full of Woe"</em>
+    </h2>
+    <strong> Curious? </strong>
+        <button> Click here</button>
+    
+    <hr>
+        <img src="https://media.vanityfair.com/photos/62faca32888dcb1c799a5d52/master/w_1920,c_limit/Wednesday-First-Look-04.jpg"alt>
+    </hr>
+    <div>
+      <a Class="contact-details"
+      >
+    <span class="contact-platform">Instagram:</span>
+        @wednesdaynetflix
+    </div>
+    
+
+    <ul>
+      <li>
+        
+        <p>
+        Wednesday is an American coming-of-age comedy, mystery television series based on the character Wednesday Addams by Charles Addams. <br /> In this show Wednesday Addams is expelled from her school after trying to defend her brother Pugsley. Her parents Gomez and Morticia Addams enroll her at their high school Nevermore Academy; a private school for monstrous outcasts; full of murder mysteries.
+        <br /> Although many are put off by her cold persona, no one can deny she is force to be reconned with. While playing detective she discovers she has inherited her mother's psychic abilities which allow her to solve a local murder. 
+        </p>
+        </li>
+    </ul>
+<p>
+        <ul>
+      <li>  
+        <a href= "https://www.netflix.com/title/81231974"
+        class="free"
+    >
+        Watch here 🖐
+        </a>
+      </li>
+      </ul>
+ </p>
+
+    <script>
+    function favoriteShow(){
+      let firstName = prompt("What is your first name");
+      let seen = prompt("Have you seen Wednesday?")
+      let h1 = document.querySelector("h1");
+      
+
+      if (seen === "yes" || seen === "no") {
+        if (seen === "yes"){
+        h1.innerHTML = ("Great! " + firstName + ", Welcome to the fan club");
+      }
+      else {
+        alert("Go watch Wednesday");
+      }
+      }
+    }    
+      let clickButton = document.querySelector("button");
+        clickButton.addEventListener("click", favoriteShow)
+    
+    </script>
+</div>
+
+    
+</body>
+</html>
